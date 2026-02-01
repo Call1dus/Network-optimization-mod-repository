@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "com.example.networkoptimizationmod.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "ClientPlayerEntityMixin",
+    "ClientPlayerInteractionManagerMixin",
+    "ClientPlayerStatusEffectMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

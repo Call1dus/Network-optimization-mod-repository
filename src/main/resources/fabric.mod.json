@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "network_optimization_mod",
+  "version": "${version}",
+  "name": "Network Optimization Mod",
+  "description": "Prioritizes client-side food consumption before notifying servers.",
+  "authors": ["Example"],
+  "contact": {
+    "sources": "https://example.com"
+  },
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.example.networkoptimizationmod.NetworkOptimizationMod"
+    ],
+    "client": [
+      "com.example.networkoptimizationmod.NetworkOptimizationModClient"
+    ]
+  },
+  "mixins": [
+    "network_optimization_mod.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.9",
+    "fabric": "*",
+    "minecraft": "1.21.11"
+  }
+}
